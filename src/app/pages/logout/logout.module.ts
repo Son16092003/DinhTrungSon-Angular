@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LogoutRoutingModule } from './logout-routing.module';
 import { LogoutComponent } from './logout.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { LogoutComponent } from './logout.component';
   ],
   imports: [
     CommonModule,
-    LogoutRoutingModule
+    LogoutRoutingModule,
+    SharedModule
   ]
 })
 export class LogoutModule { }

@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartService } from 'src/app/Services/cart.service';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss']
 })
-export class CartComponent {
-  constructor(public routerService: Router){
+export class CartComponent implements OnInit{
+  cart = this.cartService.cart;
+  constructor(private cartService: CartService){}
 
-  }
-  
-  goHome(){
-    this.routerService.navigate(['home']);  
+  ngOnInit(){
+    // console.log(this.cartService.cart)
   }
 }

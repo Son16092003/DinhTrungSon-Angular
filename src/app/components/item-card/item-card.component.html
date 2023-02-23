@@ -1,0 +1,14 @@
+<div class="clothes">
+    <div class="card-image">
+      <img [src]="itemData.url">
+    </div>
+      <h2>{{itemData.title}}</h2>
+      <p>{{itemData.description}}</p>
+      <b>{{itemData.price}}đ</b>
+      <b>{{itemData.stock}}</b>
+      <div class="conHang-cart">
+        <a mat-button>Còn hàng</a>
+        <button class="btn-icon" (click)="addToCart(itemData)"><mat-icon>add_shopping_cart</mat-icon></button>
+      </div>
+</div>
+ 

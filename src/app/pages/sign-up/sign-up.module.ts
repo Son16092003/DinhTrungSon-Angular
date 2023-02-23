@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SignUpRoutingModule } from './sign-up-routing.module';
 import { SignUpComponent } from './sign-up.component';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { SignUpComponent } from './sign-up.component';
   ],
   imports: [
     CommonModule,
-    SignUpRoutingModule
+    SignUpRoutingModule,
+    SharedModule
   ]
 })
 export class SignUpModule { }

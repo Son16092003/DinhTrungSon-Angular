@@ -5,7 +5,7 @@ import { CartRoutingModule } from './cart-routing.module';
 import { CartComponent } from './cart.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import {MatIconModule} from '@angular/material/icon';
     CommonModule,
     CartRoutingModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule
   ]
 })
 export class CartModule { }

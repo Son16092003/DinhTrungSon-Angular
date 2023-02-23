@@ -8,11 +8,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     CommonModule,
@@ -21,7 +22,8 @@ import { RouterModule } from '@angular/router';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "demofirebase-e874e": {
+      "hosting": {
+        "design-demo": [
+          "demofirebase-e874e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "demofirebase-e874e"
+  }
+}

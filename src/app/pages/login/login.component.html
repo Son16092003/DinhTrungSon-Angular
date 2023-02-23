@@ -1,1 +1,4 @@
-<p>login works!</p>
+
+
+<button *ngIf="!authService.currentUser" (click)="login()">Login</button>
+<button *ngIf="authService.currentUser" (click)="logout()">Logout</button>
